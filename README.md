@@ -25,14 +25,14 @@ T-Pot is an open-source honeypot platform that integrates multiple honeypot tech
    - **Username**: Your chosen username.
    - **SSH Public Key**: Paste your SSH public key.
 
-   **Screenshot: Azure VM creation steps.*
+   ![Alt text](azure.png)
+
 
 ### Configuring Networking
 
 1. **Network Security Group (NSG) Rules**:
    - Allow inbound traffic on ports `22` (SSH), `64297` (T-Pot Web UI), and `64295` (SSH post-installation).
-
-   **Screenshot: NSG rules configuration.*
+   ![Alt text](azure resource group.png)
 
 ## # Preparing the VM for T-Pot Installation
 
@@ -54,11 +54,6 @@ Install `git`:
 sudo apt install -y git
 ```
 
-**Screenshot: Installing essential packages.*
-
-
-
-
 
 ## # Installing T-Pot
 
@@ -69,9 +64,7 @@ sudo apt install -y git
    ```bash
    git clone https://github.com/telekom-security/tpotce.git
    ```
-
-
-   **Screenshot: Cloning the T-Pot repository.**
+   
 
 ### Running the Installer
 
@@ -87,13 +80,15 @@ sudo apt install -y git
    ```bash
    sudo ./install.sh
    ```
+   ![Alt text](tpot installer.png)
 
 
 3. **Follow On-Screen Prompts**: During installation, you'll be prompted to:
    - **Select Installation Type**: Choose the standard T-Pot installation or a specialized setup ,i choose standard type.
    - **Create a User**: Set a username and password for accessing the T-Pot web interface.
 
-   **Screenshot: T-Pot installation process and user creation.**
+      ![Alt text](tpot install last.png)
+
 
 4. **Reboot the System**: After installation completes, reboot the VM:
 
@@ -102,7 +97,7 @@ sudo apt install -y git
    ```
 
 
-   **Screenshot: System reboot post-installation.**
+   
 
 ## # Accessing T-Pot's Web Interface
 
@@ -114,7 +109,8 @@ sudo apt install -y git
 
 4. **Log In**: Use the credentials set during installation.
 
-   **Screenshot: T-Pot web interface login screen.**
+      ![Alt text](tpot menu.png)
+
 
 
 
@@ -131,7 +127,6 @@ Kibana is a data visualization and exploration tool for reviewing logs and metri
 
 - **Visualizations**: Analyze data through various charts and graphs, aiding in identifying attack patterns and trends.
 
-**Screenshot: Kibana dashboard displaying attack statistics.**
 
 ### Attack Map
 
@@ -139,7 +134,8 @@ The Attack Map provides a real-time, geographical representation of incoming att
 
 - **Visualization**: Observe attack origins and targets on a world map, enhancing situational awareness.
 
-**Screenshot: Real-time Attack Map highlighting global attack sources.**
+   ![Alt text](attackmap.png)
+
 
 ### CyberChef
 
@@ -147,7 +143,8 @@ CyberChef is a versatile tool for data analysis and manipulation:
 
 - **Features**: Perform tasks such as decoding, encoding, encryption, and data parsing.
 
-**Screenshot: CyberChef interface showcasing data transformation operations.**
+   ![Alt text](cyberchef(2).png)
+
 
 ### Elasticvue
 
@@ -155,7 +152,8 @@ Elasticvue is an Elasticsearch GUI for managing and browsing your Elasticsearch 
 
 - **Functionality**: Inspect indices, query data, and monitor cluster health.
 
-**Screenshot: Elasticvue dashboard displaying cluster status and index details.**
+   ![Alt text](elastic curve.png)
+
 
 ### SpiderFoot
 
@@ -163,7 +161,8 @@ SpiderFoot is an open-source intelligence (OSINT) automation tool:
 
 - **Capabilities**: Gather intelligence on IPs, domains, emails, and more, aiding in threat intelligence efforts.
 
-**Screenshot: SpiderFoot scan results highlighting discovered information.**
+   ![Alt text](spiderfoot(2).png)
+
 
 
 
