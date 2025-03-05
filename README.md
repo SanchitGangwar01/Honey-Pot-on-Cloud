@@ -44,7 +44,7 @@ Update and upgrade the system packages:
 sudo apt update && sudo apt upgrade -y
 ```
 
-**Screenshot: System update and upgrade process.*
+
 
 ### Installing Essential Packages
 
@@ -80,14 +80,14 @@ sudo apt install -y git
    ```bash
    sudo ./install.sh
    ```
-   ![Alt text](tpot installer.png)
+   ![Alt text](tpot_installer.png)
 
 
 3. **Follow On-Screen Prompts**: During installation, you'll be prompted to:
    - **Select Installation Type**: Choose the standard T-Pot installation or a specialized setup ,i choose standard type.
    - **Create a User**: Set a username and password for accessing the T-Pot web interface.
 
-      ![Alt text](tpot install last.png)
+      ![Alt text](tpot_install_last.png)
 
 
 4. **Reboot the System**: After installation completes, reboot the VM:
@@ -109,7 +109,7 @@ sudo apt install -y git
 
 4. **Log In**: Use the credentials set during installation.
 
-      ![Alt text](tpot menu.png)
+      ![Alt text](tpot_menu.png)
 
 
 
@@ -152,7 +152,7 @@ Elasticvue is an Elasticsearch GUI for managing and browsing your Elasticsearch 
 
 - **Functionality**: Inspect indices, query data, and monitor cluster health.
 
-   ![Alt text](elastic curve.png)
+   ![Alt text](elastic_curve.png)
 
 
 ### SpiderFoot
